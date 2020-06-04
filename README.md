@@ -1,1 +1,1 @@
-project stanza html scss/css js 
+project Stanza-shop html scss/css js 

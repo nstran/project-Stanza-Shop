@@ -10,11 +10,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>Stanza Shop</title>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="header">
         <div class="header-top-bar">
             <div class="container">
@@ -38,7 +41,7 @@
                             </li>
                             <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
                             <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
                             <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
                             <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
                             <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
@@ -106,6 +109,14 @@
                         </div>
                         <div class="nav-search">
                             <a class="btn -orange" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <div class="mini-search">
+                                <div class="mini-search__dropbox">
+                                    <form action="/" class="search_form">
+                                        <input type="text" placeholder="Type and hit enter ...">
+                                        <button type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="cart">
                             <div class="cart__hover">
@@ -115,12 +126,700 @@
                                     <i class="fas fa-shopping-cart"></i>
                                 </span>
                             </div>
+                            <div class="cart__summery">
+                                <div class="cart__summery__dropbox">
+                                    <p>You have 2 items in your cart</p>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cart-thum">
+                                                    <img src="./images/cartThum-1.jpg" alt="">
+                                                </span>
+                                                <div class="item-cart">
+                                                    <p class="item-cart__name">Bonfire Shorts in Castaway
+                                                        <span>$29.00</span>
+                                                    </p>
+                                                    <p class="item-cart__des">
+                                                        <span>women</span>
+                                                        <br> Color: Black / Size: 9
+                                                    </p>
+                                                    <p class="item-cart__logo">
+                                                        <img src="./images/logo-small.png" alt="">
+                                                        <i class="far fa-clock"></i>
+                                                        <span>4:15</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                            <button class="item-delete">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cart-thum">
+                                                    <img src="./images/cartThum-2.jpg" alt="">
+                                                </span>
+                                                <div class="item-cart">
+                                                    <p class="item-cart__name">Bonfire Shorts in Castaway
+                                                        <span>$29.00</span>
+                                                    </p>
+                                                    <p class="item-cart__des">
+                                                        <span>women</span>
+                                                        <br> Color: Black / Size: 9
+                                                    </p>
+                                                    <p class="item-cart__logo">
+                                                        <img src="./images/logo-small.png" alt="">
+                                                        <i class="far fa-clock"></i>
+                                                        <span>4:15</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                            <button class="item-delete">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="total-price">
+                                        <a href="" class="btn -btn -bg-61760 -left">View cart</a>
+                                        <a href="" class="btn -btn -bg-e8520 -left">Check out</a>
+                                        <span>Subtotal</span>$58.00
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Featured-products -->
+
+    <section class="featured-products">
+        <div class="container">
+            <h3 class="featured-products__title">Featured Products</h3>
+            <div class="row">
+                <ul class="owl-carousel product-carousel">
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-1.jpg" alt="">
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Corine Genuine Leather Tote</a>
+                                    </span>
+                                    <p>Genuine leather exterior, poly resin lining</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$19.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-2.jpg" alt="">
+                                    <span class="sale">Sale!</span>
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Basic Slim Jean</a>
+                                    </span>
+                                    <p>Denim Distressed Skinny Fit Ankle Jeans</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$29.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-3.jpg" alt="">
+                                    <span class="out-stock">Out of Stock</span>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">T-Shirt Dress</a>
+                                    </span>
+                                    <p>Crew neck, Full sleeves, Approx. 37.5" length, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$39.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-4.jpg" alt="">
+                                    <span class="sale">Sale!</span>
+                                    <span class="new">New</span>
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Short Sleeve Crew Tee</a>
+                                    </span>
+                                    <p>Crew neck, Short sleeves, Front print, Approx. 30" length, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$15.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service -->
+
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="service__box -bg_1">
+                        <p><i class="fas fa-cogs"></i></p>
+                        <h3>Free Support</h3>
+                        <p>We provide an online dedicated support and our highly professional customer service representatives are available 24/7.</p>
+                        <div class="white-over-lay"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="service__box -bg_2">
+                        <p><i class="fa fa-align-justify" aria-hidden="true"></i></p>
+                        <h3>Mobile Friendly</h3>
+                        <p>It has Fluid, Responsive Retina-Ready display that is functional on all platforms, and on any screen sizes, to give you a robust mobile friendly website.</p>
+                        <div class="white-over-lay"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="service__box -bg_3">
+                        <p><i class="fa fa-check-square-o" aria-hidden="true"></i></p>
+                        <h3>Premium Quality</h3>
+                        <p>This stunning eCommerce template has gone live after a thorough QA by iMediaTheme’s Software Quality Assurance team.</p>
+                        <div class="white-over-lay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category -->
+    <section class="categories">
+        <div class="container">
+            <h3 class="categories-title">Browse by Categories</h3>
+            <div class="row category-row">
+                <ul class="clearfix category-slider owl-carousel ">
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="category-box">
+                                <a href="">
+                                    <div class="category-box__image">
+                                        <img src="http://idevwork.com/stanzastore/html/images/category-1.jpg" alt="">
+                                        <div class="title">
+                                            Women
+                                            <span>8 Products</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="category-box">
+                                <a href="">
+                                    <div class="category-box__image">
+                                        <img src="http://idevwork.com/stanzastore/html/images/category-2.jpg" alt="">
+                                        <div class="title">
+                                            Men
+                                            <span>9 Products</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="category-box">
+                                <a href="">
+                                    <div class="category-box__image">
+                                        <img src="http://idevwork.com/stanzastore/html/images/category-3.jpg" alt="">
+                                        <div class="title">
+                                            Top
+                                            <span>8 Products</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="category-box">
+                                <a href="">
+                                    <div class="category-box__image">
+                                        <img src="http://idevwork.com/stanzastore/html/images/category-4.jpg" alt="">
+                                        <div class="title">
+                                            Jeans
+                                            <span>6 Products</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial -bg-fixed -bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-offset-4 col-md-8 testimonials__widget">
+                    <div class="testimonial__text">
+                        Their ideas, great communication and the level of expertise are undoubtedly the best in the industry. InfloWay developed an amazing website for us, had great ideas on functionality, implemented SEO – allthat led to increased sales by a healthy margin.
+                        They are still managing our social media now – A++!
+                    </div>
+                    <div class="testimonial__star">
+                        <span class="stars-rating"></span>
+                    </div>
+                    <div class="testimonial__author">
+                        <span class="testimonial__author__icon"></span> Andrew S
+                        <br> New Castle, NY
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Product -->
+    <section class="featured-products">
+        <div class="container">
+            <h3 class="featured-products__title">New Products</h3>
+            <div class="product-row row">
+                <ul class="owl-carousel product-carousel">
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-5.jpg" alt="">
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Classic Fit White Tank</a>
+                                    </span>
+                                    <p>Scoop neck, Short Sleeves, Approx. 26" length, Made in USA</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$19.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-6.jpg" alt="">
+                                    <span class="sale">Sale!</span>
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Sport Crew Neck Tee</a>
+                                    </span>
+                                    <p>Crew neck, Short sleeves, Approx. 30" length, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$29.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-7.jpg" alt="">
+                                    <span class="new">New</span>
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">London Leather Bucket Bag</a>
+                                    </span>
+                                    <p>Single top convertible strap, Zip top closure, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$29.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-8.jpg" alt="">
+                                    <span class="sale">Sale!</span>
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Basic Orange Tank</a>
+                                    </span>
+                                    <p>Crew neck, Short sleeves, Back zip closure, Made in USA</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$38.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Seller -->
+    <section class="best-seller">
+        <div class="container">
+            <h3 class="best-seller__title">Best Sellers</h3>
+            <div class="product-row row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="product-box -best-seller">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/best-sell-1.jpg" alt="">
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Top</a>
+                                    </span>
+                                    <p>Crew neck, Full sleeves, Approx. 37.5" length, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$38.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="product-box -best-seller">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/best-sell-2.jpg" alt="">
+                                    <span class="sale">Sale!</span>
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Jeans</a>
+                                    </span>
+                                    <p>Calvin Klein Men's Straight Leg Jean in Dark Blue</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$38.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/best-sell-3.jpg" alt="">
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">T-shirt</a>
+                                    </span>
+                                    <p>Crew neck, Short sleeves, Front print, Approx. 30" length, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$38.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/best-sell-4.jpg" alt="">
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Bags</a>
+                                    </span>
+                                    <p>Genuine leather exterior, poly resin lining</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$38.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="product-box -big-sell">
+                        <div class="product-box__image -hover-style">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6 img-height">
+                                        <img src="http://idevwork.com/stanzastore/html/images/big-sel-img.png" alt="">
+                                    </div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <a href="" class="on-sale-btn">
+                                            <span>On</span> Sale!
+                                        </a>
+                                        <div class="text-left">
+                                            <h3>Drawstring Linen Short</h3>
+                                            <p>Banded drawstring waist, 2 front slash pockets, Approx. 10" rise, 3" inseam, Made in USA</p>
+                                            <hr>
+                                            <p>100% linenCare, Machine wash cold, this style fits true to size.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hover-box">
+                                <div class="hover-icons">
+                                    <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                    <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                </div>
+                                <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="product-box__desc">
+                            <div class="row">
+                                <div class="col-md-8 text-left">
+                                    <span class="product-box__desc__title ">
+                                        <a href="">Drawstring Linen Short</a>
+                                    </span>
+                                    <p>Banded drawstring waist, 2 front slash pockets, Approx. 10" rise, 3" inseam, Made in USA</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating text-left"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <strong class="product-price text-right"><del>$59.00</del></strong>
+                                    <strong class="big-sell-price text-right">$39.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+        <div class="container">
+            <h3 class="blog__title">Blog</h3>
+            <div class="blog-row row">
+                <div class="col-md-3 col-sm-6 col-xs-12 col-xs-12-ls">
+                    <div class="blog-box">
+                        <div class="blog-box__image">
+                            <img src="http://idevwork.com/stanzastore/html/images/blog-post-1.jpg" alt="">
+                            <div class="blog-date">
+                                <i>Mar</i>
+                                <hr>
+                                <span>20</span>
+                                <hr>
+                                <i>2020</i>
+                            </div>
+                        </div>
+                        <div class="blog-box__desc">
+                            <div class="blog-title">
+                                <a href="">Wearable Fall Fashion Trends</a>
+                            </div>
+                            <p class="blog-info">
+                                March 20, 2020 by
+                                <a href="">John Doe</a> in
+                                <a href="">Business</a>
+                            </p>
+                            <p class="blog-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                            <a href="" class="more">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col-xs-12-ls">
+                    <div class="blog-box">
+                        <div class="blog-box__image">
+                            <img src="http://idevwork.com/stanzastore/html/images/blog-post-2.jpg" alt="">
+                            <div class="blog-date">
+                                <i>Mar</i>
+                                <hr>
+                                <span>15</span>
+                                <hr>
+                                <i>2020</i>
+                            </div>
+                        </div>
+                        <div class="blog-box__desc">
+                            <div class="blog-title">
+                                <a href="">How To: 50 Ways To Look Stylish</a>
+                            </div>
+                            <p class="blog-info">
+                                March 15, 2020 by
+                                <a href="">John Doe</a> in
+                                <a href="">Business</a>
+                            </p>
+                            <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos id fugit eum ipsa, obcaecati assumenda ipsum vel molestiae, dicta corporis fugiat deleniti repudiandae non quidem minus. Eaque quia mollitia nisi.</p>
+                            <a href="" class="more">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col-xs-12-ls">
+                    <div class="blog-box">
+                        <div class="blog-box__image">
+                            <img src="http://idevwork.com/stanzastore/html/images/blog-post-3.jpg" alt="">
+                            <div class="blog-date">
+                                <i>Mar</i>
+                                <hr>
+                                <span>12</span>
+                                <hr>
+                                <i>2020</i>
+                            </div>
+                        </div>
+                        <div class="blog-box__desc">
+                            <div class="blog-title">
+                                <a href="">The Fashion Guide of Dos & Donts</a>
+                            </div>
+                            <p class="blog-info">
+                                March 12, 2020 by
+                                <a href="">John Doe</a> in
+                                <a href="">Business</a>
+                            </p>
+                            <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo hic unde beatae at ipsa reprehenderit eius doloremque, ut voluptates corporis recusandae. Possimus dolore quia consectetur quidem debitis corrupti sapiente?</p>
+                            <a href="" class="more">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 col-xs-12-ls">
+                    <div class="blog-box">
+                        <div class="blog-box__image">
+                            <img src="http://idevwork.com/stanzastore/html/images/blog-post-4.jpg" alt="">
+                            <div class="blog-date">
+                                <i>Mar</i>
+                                <hr>
+                                <span>11</span>
+                                <hr>
+                                <i>2020</i>
+                            </div>
+                        </div>
+                        <div class="blog-box__desc">
+                            <div class="blog-title">
+                                <a href="">10 Surefire Ways to Dress Yourself Slimmer</a>
+                            </div>
+                            <p class="blog-info">
+                                March 11, 2020 by
+                                <a href="">John Doe</a> in
+                                <a href="">Business</a>
+                            </p>
+                            <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate, laboriosam ea soluta perspiciatis esse voluptatibus eveniet earum obcaecati eligendi, sed cumque deleniti adipisci aliquam consequuntur. Aut modi
+                                corporis vel?</p>
+                            <a href="" class="more">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -249,7 +948,7 @@
                                 <li>Follow us</li>
                                 <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
                                 <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
                                 <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
                                 <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
                                 <li><a href=""><i class="fab fa-instagram-square"></i></a></li>

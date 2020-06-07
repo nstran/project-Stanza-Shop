@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
 }
 
 $color:#363839;
@@ -206,6 +205,7 @@ header {
                                         text-transform: uppercase;
                                         font-weight: 600;
                                         text-align: left;
+                                        font-size: 14px;
                                         &:hover {
                                             text-decoration: none;
                                         }
@@ -253,8 +253,68 @@ header {
                         border-radius: 5px;
                         vertical-align: middle;
                         font-size: 15px;
+                        cursor: pointer;
                         &:hover {
                             opacity: 0.7;
+                        }
+                    }
+                }
+                .mini-search {
+                    height: 73px;
+                    padding-top: 0px;
+                    margin-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: 0px;
+                    width: 400px;
+                    position: absolute;
+                    right: 0;
+                    z-index: 999;
+                    display: none;
+                    &__dropbox {
+                        background: #fff;
+                        border: 5px solid #dbdbdb;
+                        border-radius: 5px;
+                        padding: 10px 26px 10px;
+                        position: relative;
+                        text-align: left;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: -5px;
+                            top: -20px;
+                            width: 0;
+                            height: 0;
+                            border-left: 20px solid transparent;
+                            border-right: 0px solid transparent;
+                            border-bottom: 20px solid #dbdbdb;
+                        }
+                        .search_form {
+                            height: 43px;
+                            overflow: hidden;
+                            border-radius: 5px;
+                            position: relative;
+                            input {
+                                width: 100%;
+                                background: #42454a;
+                                color: #fff;
+                                padding: 13px 55px 13px 10px;
+                                border-radius: 5px;
+                                border: 0;
+                                font-style: normal;
+                                height: inherit;
+                                font-size: 14px;
+                            }
+                            button {
+                                border-radius: 0px 5px 5px 0px;
+                                font-size: 20px;
+                                color: #fff;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                padding: 8px 10px;
+                                background: #e85200;
+                                border: none;
+                            }
                         }
                     }
                 }
@@ -263,6 +323,13 @@ header {
                 float: right;
                 margin: 13px 0 0 20px;
                 position: relative;
+                transition: 0.3s;
+                &:hover .cart__summery {
+                    display: block;
+                    transition: 0.3s;
+                    padding-top: 23px;
+                    top: 11px;
+                }
                 &__hover {
                     .cart-btn {
                         background: #e85200;
@@ -274,6 +341,9 @@ header {
                         line-height: 34px;
                         position: relative;
                         cursor: pointer;
+                        &:hover {
+                            background: #111;
+                        }
                     }
                     .cart-icon {
                         display: inline-block;
@@ -295,6 +365,150 @@ header {
                             font-size: 12px;
                             font-style: normal;
                             border: 1px solid #e85200;
+                        }
+                    }
+                }
+                &__summery {
+                    position: absolute;
+                    right: 0;
+                    width: 515px;
+                    padding-top: 0;
+                    top: 0;
+                    z-index: 999;
+                    display: none;
+                    transition: 0.3s;
+                    &__dropbox {
+                        background: #fff;
+                        border: 5px solid #dbdbdb;
+                        border-radius: 5px;
+                        padding: 10px 26px 10px;
+                        position: relative;
+                        text-align: left;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            right: -5px;
+                            top: -20px;
+                            width: 0;
+                            height: 0;
+                            border-left: 20px solid transparent;
+                            border-right: 0px solid transparent;
+                            border-bottom: 20px solid #dbdbdb;
+                        }
+                        >p {
+                            font-size: 16px;
+                        }
+                        ul {
+                            padding-bottom: 20px;
+                            border-bottom: 1px dashed #7d7d7d;
+                            list-style: none;
+                            li {
+                                margin-top: 15px;
+                                padding-top: 15px;
+                                border-top: 1px solid #595959;
+                                font-size: 15px;
+                                position: relative;
+                                a {
+                                    display: block;
+                                    color: #717171;
+                                    padding-right: 25px;
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
+                                    .cart-thum {
+                                        float: left;
+                                        margin-right: 10px;
+                                        width: 63px;
+                                        height: 71px;
+                                        overflow: hidden;
+                                        text-align: center;
+                                        border: 1px solid #f2f2f2;
+                                        background: #ebebeb;
+                                        img {
+                                            height: 100%;
+                                            width: auto;
+                                        }
+                                    }
+                                    .item-cart {
+                                        overflow: hidden;
+                                        &__name {
+                                            margin-bottom: 5px;
+                                            color: #000;
+                                            span {
+                                                float: right;
+                                                font-size: 18px;
+                                            }
+                                        }
+                                        &__des {
+                                            color: #525252;
+                                            margin: 0px 0px 18px 0px;
+                                            span {
+                                                color: $bg;
+                                            }
+                                        }
+                                        &__logo {
+                                            color: #525252;
+                                            margin: 0px 0px 18px 0px;
+                                            img {
+                                                max-width: 100%;
+                                                border: 0px;
+                                            }
+                                            i {
+                                                margin: 0 10px;
+                                            }
+                                            span {
+                                                color: $bg;
+                                            }
+                                        }
+                                    }
+                                }
+                                .item-delete {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 10px;
+                                    font-size: 20px;
+                                    color: #e85200;
+                                    background: none;
+                                    padding: 0;
+                                    border: 0;
+                                    outline: none;
+                                    &:hover {
+                                        color: #111;
+                                    }
+                                }
+                            }
+                        }
+                        .total-price {
+                            font-size: 22px;
+                            color: $bg;
+                            margin: 15px 0;
+                            font-weight: 600;
+                            text-align: right;
+                            line-height: 40px;
+                            .btn {
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-size: 18px;
+                                margin-right: 10px;
+                                border-radius: 6px;
+                                &:hover {
+                                    color: #111;
+                                }
+                                &.-bg-61760 {
+                                    background: #61760d;
+                                }
+                                &.-bg-e8520 {
+                                    background: $bg;
+                                }
+                                &.-left {
+                                    float: left;
+                                }
+                            }
+                            span {
+                                color: #000;
+                                margin-right: 10px;
+                                font-size: 22px;
+                            }
                         }
                     }
                 }

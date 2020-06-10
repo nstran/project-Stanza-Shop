@@ -81,6 +81,8 @@ function scrollFunction() {
     // }
 }
 
+
+// Show search
 $('.nav-search .btn-orange').click(function() {
     $('.mini-search').toggleClass('show-search ');
 });

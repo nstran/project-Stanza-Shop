@@ -287,10 +287,14 @@ header .header-inner .clearfix .nav-search .mini-search {
   position: absolute;
   right: 0;
   z-index: 999;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 header .header-inner .clearfix .nav-search .mini-search.show-search {
-  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: 0.3s;
 }
 header .header-inner .clearfix .nav-search .mini-search__dropbox {
   background: #fff;
@@ -341,7 +345,7 @@ header .header-inner .clearfix .nav-search .mini-search__dropbox .search_form bu
 }
 header .header-inner .clearfix .cart {
   float: right;
-  margin: 13px 0 0 20px;
+  margin: 13px 0 0 0;
   position: relative;
   transition: 0.3s;
 }

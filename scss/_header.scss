@@ -291,9 +291,13 @@ header {
                     position: absolute;
                     right: 0;
                     z-index: 999;
-                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.3s;
                     &.show-search {
-                        display: block !important;
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        transition: 0.3s;
                     }
                     &__dropbox {
                         background: #fff;
@@ -346,7 +350,7 @@ header {
             }
             .cart {
                 float: right;
-                margin: 13px 0 0 20px;
+                margin: 13px 0 0 0;
                 position: relative;
                 transition: 0.3s;
                 &:hover .cart__summery {

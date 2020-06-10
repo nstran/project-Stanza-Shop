@@ -6,20 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/nivo-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.js"></script>
+
     <title>Stanza Shop</title>
 </head>
 
 <body>
 
+    <!-- Menu-mobile -->
+    <div class="humberger-menu__overlay"></div>
+    <div class="humberger-menu">
+        <div class="humberger-menu__logo">
+            <a href=""><img src="./images/logo.png" alt=""></a>
+        </div>
+        <div class="humberger-menu__cart">
+            <a href="" class="cart">
+                <span class="cart-btn">Cart / $ 58.00</span>
+                <span class="cart-icon">
+                    <i class="item-count">2</i>
+                    <i class="fas fa-shopping-cart"></i>
+                </span>
+            </a>
+        </div>
+        <div class="humberger-menu__search">
+            <div class="mini-search">
+                <div class="mini-search__dropbox">
+                    <form action="/" class="search_form">
+                        <input type="text" placeholder="Type and hit enter ...">
+                        <button type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="humberger-menu__mobile__menu">
+            <ul class="main-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="#">Shop<span><i class="fas fa-caret-right"></i></span></a>
+                    <ul class="sub-menu">
+                        <li class="menu-item -has-children"><a href="">Grid Layout with Banner</a>
+                            <ul class="sub-menu">
+                                <li><a href="">2 Grid Layout</a></li>
+                                <li><a href="">3 Grid Layout</a></li>
+                                <li><a href="">4 Grid Layout</a></li>
+                                <li><a href="">5 Grid Layout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Slider</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Headers</a></li>
+                <li><a href="">Footers</a></li>
+                <li><a href="">Features</a></li>
+            </ul>
+        </div>
+        <div class="humberger-menu__social">
+            <ul class="list-inline">
+                <li><a href="">Register</a>
+                    <a href="">Login</a>
+                    <a href="">Whislist</a>
+                </li>
+                <ul class="social">
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-square"></i></a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
     <!-- Header -->
-    <header class="header">
-        <div class="header-top-bar">
+    <header class="header" id="header">
+        <div class="header-top__bar">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 -top-left">
@@ -58,6 +129,9 @@
                         <a href="">
                             <img src="./images/logo.png" alt="">
                         </a>
+                    </div>
+                    <div class="humberger">
+                        <span></span>
                     </div>
                     <nav class="clearfix">
                         <div class="main_menu_cont">
@@ -108,7 +182,7 @@
                             </ul>
                         </div>
                         <div class="nav-search">
-                            <a class="btn -orange" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                            <a class="btn-orange" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                             <div class="mini-search">
                                 <div class="mini-search__dropbox">
                                     <form action="/" class="search_form">
@@ -120,7 +194,7 @@
                         </div>
                         <div class="cart">
                             <div class="cart__hover">
-                                <span class="cart-btn">Cart / $0.00</span>
+                                <span class="cart-btn">Cart / $58.00</span>
                                 <span class="cart-icon">
                                     <i class="item-count">2</i>
                                     <i class="fas fa-shopping-cart"></i>
@@ -193,13 +267,22 @@
         </div>
     </header>
 
-    <!-- Featured-products -->
+    <section class="nivo-slider">
+        <div id="slider" class="nivoSlider">
+            <img src="https://theme.hstatic.net/1000194808/1000367944/14/slideshow_1.png?v=1397" alt="">
+            <img src="https://theme.hstatic.net/1000194808/1000367944/14/slideshow_2.png?v=1397" alt="">
+            <img src="https://hstatic.net/840/1000112840/1000156389/presentation-3.jpg?v=1180" alt="">
+            <img src="https://hstatic.net/840/1000112840/1000156389/presentation-1.jpg?v=1180" alt="">
+            <img src="https://hstatic.net/840/1000112840/1000156389/presentation-2.jpg?v=1180" alt="">
+        </div>
+    </section>
 
+    <!-- Featured-products -->
     <section class="featured-products">
         <div class="container">
             <h3 class="featured-products__title">Featured Products</h3>
             <div class="row">
-                <ul class="owl-carousel product-carousel">
+                <ul class="product-carousel owl-product owl-carousel">
                     <li>
                         <div class="col-xs-12">
                             <div class="product-box">
@@ -301,13 +384,38 @@
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-9.jpg" alt="">
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Pointelle Long Sleeve Tee</a>
+                                    </span>
+                                    <p>Boatneck, Long sleeves, Approx. 24" length, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$18.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- Service -->
-
     <section class="service">
         <div class="container">
             <div class="row">
@@ -342,7 +450,7 @@
     <!-- Category -->
     <section class="categories">
         <div class="container">
-            <h3 class="categories-title">Browse by Categories</h3>
+            <h3 class="categories__title">Browse by Categories</h3>
             <div class="row category-row">
                 <ul class="clearfix category-slider owl-carousel ">
                     <li>
@@ -540,6 +648,33 @@
                                         <span class="stars-rating"></span>
                                     </div>
                                     <strong class="product-price">$38.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-xs-12">
+                            <div class="product-box">
+                                <div class="product-box__image -hover-style">
+                                    <img src="http://idevwork.com/stanzastore/html/images/product-9.jpg" alt="">
+                                    <span class="sale">Sale!</span>
+                                    <div class="hover-box">
+                                        <div class="hover-icons">
+                                            <a href="" class="hovicon -eye"><i class="far fa-eye"></i></a>
+                                            <a href="" class="hovicon -heart"><i class="far fa-heart"></i></a>
+                                        </div>
+                                        <a href="" class="add-to-cart -cart-btn">Add to Cart</a>
+                                    </div>
+                                </div>
+                                <div class="product-box__desc">
+                                    <span class="product-box__desc__title">
+                                        <a href="">Pointelle Long Sleeve Tee</a>
+                                    </span>
+                                    <p>Boatneck, Long sleeves, Approx. 24" length, Imported</p>
+                                    <div class="product-box__desc__stars">
+                                        <span class="stars-rating"></span>
+                                    </div>
+                                    <strong class="product-price">$18.00</strong>
                                 </div>
                             </div>
                         </div>
@@ -785,7 +920,8 @@
                                 <a href="">John Doe</a> in
                                 <a href="">Business</a>
                             </p>
-                            <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo hic unde beatae at ipsa reprehenderit eius doloremque, ut voluptates corporis recusandae. Possimus dolore quia consectetur quidem debitis corrupti sapiente?</p>
+                            <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo hic unde beatae at ipsa reprehenderit eius doloremque, ut voluptates corporis recusandae. Possimus dolore quia consectetur quidem debitis corrupti sapiente?
+                            </p>
                             <a href="" class="more">Read More...</a>
                         </div>
                     </div>
@@ -961,7 +1097,13 @@
         </div>
     </footer>
 
+    <!-- Scroll Top -->
+    <div class="scroll-top" id="back-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
     <script src="./js/index.js"></script>
+
 </body>
 
 </html>

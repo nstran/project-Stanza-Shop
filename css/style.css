@@ -380,7 +380,7 @@ header .header-inner .clearfix .cart__hover .cart-icon i:nth-child(2) {
   color: #e85200;
 }
 header .header-inner .clearfix .cart__hover .cart-icon i:nth-child(2):hover {
-  color: #111;
+  opacity: 0.8;
 }
 header .header-inner .clearfix .cart__hover .cart-icon .item-count {
   width: 20px;

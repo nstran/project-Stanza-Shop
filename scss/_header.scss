@@ -383,7 +383,7 @@ header {
                         i:nth-child(2) {
                             color: $bg;
                             &:hover {
-                                color: #111;
+                                opacity: 0.8;
                             }
                         }
                         .item-count {
